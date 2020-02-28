@@ -3,6 +3,7 @@ require "active_support/core_ext/hash/keys"
 require "active_support/core_ext/object/blank"
 require "active_support/core_ext/string/inflections"
 require "nokogiri"
+require "ruby-duration"
 
 require "microsoft_project/version"
 
