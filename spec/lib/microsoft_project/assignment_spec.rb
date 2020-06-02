@@ -59,6 +59,18 @@ describe MicrosoftProject::Assignment do
           expect(options).to eq(type: :duration)
         end
       end
+
+      describe "timephased_data" do
+        let(:element) { :timephased_data }
+
+        it "has custom options" do
+          expect(options).to eq(
+            type: MicrosoftProject::TimephasedData,
+            list: true,
+            flatten: true
+          )
+        end
+      end
     end
   end
 end

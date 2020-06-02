@@ -10,5 +10,7 @@ module MicrosoftProject
     element :remaining_work, type: :duration
     element :units, type: :float
     element :work, type: :duration
+
+    element :timephased_data, type: TimephasedData, list: true, flatten: true
   end
 end
