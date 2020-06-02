@@ -4,11 +4,11 @@ module MicrosoftProject
     include Concerns::Serialize
     include Concerns::Deserialize
 
-    element :type
+    element :type, type: :integer
     element :uid, xml_name: "UID"
-    element :start
-    element :end
-    element :unit
+    element :start, type: :date_time
+    element :end, type: :date_time
+    element :unit, type: :integer
     element :value
   end
 end

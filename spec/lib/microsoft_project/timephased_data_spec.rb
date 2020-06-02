@@ -13,11 +13,43 @@ describe MicrosoftProject::TimephasedData do
   describe "options" do
     let(:options) { described_class.element_options[element] }
 
+    describe "type" do
+      let(:element) { :type }
+
+      it "has a custom options" do
+        expect(options).to eq(type: :integer)
+      end
+    end
+
     describe "uid" do
       let(:element) { :uid }
 
       it "has a custom options" do
         expect(options).to eq(xml_name: "UID")
+      end
+    end
+
+    describe "start" do
+      let(:element) { :start }
+
+      it "has custom options" do
+        expect(options).to eq(type: :date_time)
+      end
+    end
+
+    describe "end" do
+      let(:element) { :end }
+
+      it "has custom options" do
+        expect(options).to eq(type: :date_time)
+      end
+    end
+
+    describe "unit" do
+      let(:element) { :unit }
+
+      it "has custom options" do
+        expect(options).to eq(type: :integer)
       end
     end
   end
