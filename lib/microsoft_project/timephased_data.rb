@@ -7,7 +7,7 @@ module MicrosoftProject
     element :type, type: :integer
     element :uid, xml_name: "UID"
     element :start, type: :date_time
-    element :end, type: :date_time
+    element :finish, type: :date_time
     element :unit, type: :integer
     element :value
   end
