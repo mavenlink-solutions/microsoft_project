@@ -5,7 +5,10 @@ describe MicrosoftProject::Assignment do
     it { is_expected.to respond_to(:uid).and respond_to(:uid=) }
     it { is_expected.to respond_to(:task_uid).and respond_to(:task_uid=) }
     it { is_expected.to respond_to(:resource_uid).and respond_to(:resource_uid=) }
+    it { is_expected.to respond_to(:finish).and respond_to(:finish=) }
+    it { is_expected.to respond_to(:regular_work).and respond_to(:regular_work=) }
     it { is_expected.to respond_to(:remaining_work).and respond_to(:remaining_work=) }
+    it { is_expected.to respond_to(:start).and respond_to(:start=) }
     it { is_expected.to respond_to(:units).and respond_to(:units=) }
     it { is_expected.to respond_to(:work).and respond_to(:work=) }
 
@@ -36,11 +39,35 @@ describe MicrosoftProject::Assignment do
         end
       end
 
+      describe "finish" do
+        let(:element) { :finish }
+
+        it "has custom options" do
+          expect(options).to eq(type: :date_time)
+        end
+      end
+
+      describe "regular_work" do
+        let(:element) { :regular_work }
+
+        it "has custom options" do
+          expect(options).to eq(type: :duration)
+        end
+      end
+
       describe "remaining_work" do
         let(:element) { :remaining_work }
 
         it "has custom options" do
           expect(options).to eq(type: :duration)
+        end
+      end
+
+      describe "start" do
+        let(:element) { :start }
+
+        it "has custom options" do
+          expect(options).to eq(type: :date_time)
         end
       end
 
