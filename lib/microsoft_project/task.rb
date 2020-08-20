@@ -15,11 +15,14 @@ module MicrosoftProject
     element :duration, type: :duration
     element :duration_format, type: :integer
     element :work, type: :duration
+    element :estimated, type: :boolean
     element :milestone, type: :boolean
     element :percent_complete, type: :integer
     element :percent_work_complete, type: :integer
     element :cost, type: :decimal
     element :remaining_duration, type: :duration
+    element :constraint_type, type: :integer
+    element :constraint_date, type: :date_time
     element :notes
 
     element :predecessor_links, type: PredecessorLink, list: true, flatten: true

@@ -13,11 +13,14 @@ describe MicrosoftProject::Task do
     it { is_expected.to respond_to(:duration).and respond_to(:duration=) }
     it { is_expected.to respond_to(:duration_format).and respond_to(:duration_format=) }
     it { is_expected.to respond_to(:work).and respond_to(:work=) }
+    it { is_expected.to respond_to(:estimated).and respond_to(:estimated=) }
     it { is_expected.to respond_to(:milestone).and respond_to(:milestone=) }
     it { is_expected.to respond_to(:percent_complete).and respond_to(:percent_complete=) }
     it { is_expected.to respond_to(:percent_work_complete).and respond_to(:percent_work_complete=) }
     it { is_expected.to respond_to(:cost).and respond_to(:cost=) }
     it { is_expected.to respond_to(:remaining_duration).and respond_to(:remaining_duration=) }
+    it { is_expected.to respond_to(:constraint_type).and respond_to(:constraint_type=) }
+    it { is_expected.to respond_to(:constraint_date).and respond_to(:constraint_date=) }
     it { is_expected.to respond_to(:notes).and respond_to(:notes=) }
 
     it { is_expected.to respond_to(:predecessor_links).and respond_to(:predecessor_links=) }
@@ -135,6 +138,22 @@ describe MicrosoftProject::Task do
 
         it "has custom options" do
           expect(options).to eq(type: :duration)
+        end
+      end
+
+      describe "constraint_type" do
+        let(:element) { :constraint_type }
+
+        it "has custom options" do
+          expect(options).to eq(type: :integer)
+        end
+      end
+
+      describe "constraint_date" do
+        let(:element) { :constraint_date }
+
+        it "has custom options" do
+          expect(options).to eq(type: :date_time)
         end
       end
 
