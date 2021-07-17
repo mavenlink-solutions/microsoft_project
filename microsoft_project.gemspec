@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.files   = ["Gemfile", "lib/**/*.rb"]
   s.license = "MIT"
 
-  s.add_dependency "activesupport", ">= 2.3.3"
+  s.add_dependency "activesupport", ">= 4.2.11.1"
   s.add_dependency "nokogiri", "~> 1.10"
   s.add_dependency "ruby-duration", "~> 3.2", ">= 3.2.3"
   s.add_development_dependency "rspec", "~> 3"
