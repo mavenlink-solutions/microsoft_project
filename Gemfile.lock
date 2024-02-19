@@ -1,0 +1,88 @@
+PATH
+  remote: .
+  specs:
+    microsoft_project (0.1.1)
+      activesupport (>= 4.2.11.1)
+      nokogiri (~> 1.10)
+      ruby-duration (~> 3.2, >= 3.2.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.1.3)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    ast (2.4.2)
+    base64 (0.2.0)
+    bigdecimal (3.1.6)
+    concurrent-ruby (1.2.3)
+    connection_pool (2.4.1)
+    diff-lcs (1.5.1)
+    drb (2.2.0)
+      ruby2_keywords
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    iso8601 (0.13.0)
+    minitest (5.22.2)
+    mutex_m (0.2.0)
+    nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
+    parallel (1.24.0)
+    parser (3.3.0.5)
+      ast (~> 2.4.1)
+      racc
+    racc (1.7.3)
+    rainbow (3.1.1)
+    regexp_parser (2.9.0)
+    rexml (3.2.6)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.0)
+    rubocop (0.93.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.5)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8)
+      rexml
+      rubocop-ast (>= 0.6.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (1.30.0)
+      parser (>= 3.2.1.0)
+    ruby-duration (3.2.3)
+      activesupport (>= 3.0.0)
+      i18n
+      iso8601
+    ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    unicode-display_width (1.8.0)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  microsoft_project!
+  rspec (~> 3)
+  rubocop (~> 0.74)
+
+BUNDLED WITH
+   2.3.22
